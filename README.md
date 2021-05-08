@@ -35,4 +35,14 @@ Aplicativo web para controlar a agenda de consulta dos pacientes de uma clínica
 CREATE DATABASE BD_CONSULTORIO CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
-### Criação de tabela médicos
+### Criação da tabela médicos
+```sql
+CREATE TABLE `bd_consultorio`.`TB_MEDICOS` ( 
+    `id` INT NOT NULL AUTO_INCREMENT ,  
+    `nome` VARCHAR(100) NOT NULL ,  
+    `telefone` VARCHAR(20) NOT NULL ,  
+    `crm` VARCHAR(50) NOT NULL ,  
+    `especialidade` VARCHAR(50) NOT NULL ,    PRIMARY KEY  (`id`)
+) 
+ENGINE = InnoDB;
+```
