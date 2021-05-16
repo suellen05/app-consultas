@@ -1,4 +1,8 @@
 # App Consultas
+
+## Miro com a documentação do projeto
+https://miro.com/app/board/o9J_lO9jUSo=/
+
 ## Descrição
 Aplicativo web para controlar a agenda de consulta dos pacientes de uma clínica médica. O sistema terá os módulos de:
 - Cadastro de médicos
@@ -18,6 +22,7 @@ Aplicativo web para controlar a agenda de consulta dos pacientes de uma clínica
     - Alteração em uma agendamento
     - Exclusão de um agendamento
     - Listagem de todos os agendamentos
+
 ## Tecnologias (Stack)
 - Apache (XAMPP)
 - PHP
@@ -36,6 +41,7 @@ CREATE DATABASE BD_CONSULTORIO CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
 ### Criação da tabela médicos
+
 ```sql
 CREATE TABLE `bd_consultorio`.`TB_MEDICOS` ( 
     `id` INT NOT NULL AUTO_INCREMENT ,  
