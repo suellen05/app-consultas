@@ -1,7 +1,7 @@
 <?php include "../includes/cabecalho.php"; ?>
 <hr>
 <p>
-    <a href="#" class="btn btn-danger"> <i class="bi-plus-circle"></i>
+    <a href="pacientes-formulario-inserir.php" class="btn btn-danger"> <i class="bi-plus-circle"></i>
     Novo paciente</a>
 </p>
 
