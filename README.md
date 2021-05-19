@@ -54,5 +54,13 @@ ENGINE = InnoDB;
 ```
 ### CRIACAO DA TABELA DE PACIENTES
 
-'''sql
-CREATE TABLE `bd_consultorio`.`tb_pacientes` ( `id` INT NULL AUTO_INCREMENT , `nome` VARCHAR(100) NOT NULL , `telefone` VARCHAR(20) NOT NULL , `dat
+CREATE TABLE `bd_consultorio`.`tb_pacientes` ( 
+    `id` INT NOT NULL AUTO_INCREMENT ,  
+    `nome` VARCHAR(100) NOT NULL ,  
+    `telefone` VARCHAR(20) NOT NULL ,  
+    `data_nascimento` DATE NOT NULL ,  
+    `convenio` VARCHAR(3) NOT NULL ,  
+    `diagnostico` TEXT NOT NULL ,   
+     PRIMARY KEY  (`id`)
+) 
+ENGINE = InnoDB;
