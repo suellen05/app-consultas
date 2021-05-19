@@ -18,7 +18,7 @@
         
 
             <a href="../medicos/medicos-listar.php"><img src="../img/medico.png">Cadastro de médicos</a>
-            <a href="#"><img src="../img/paciente.png">Cadastro de pacientes</a>
+            <a href="../pacientes/pacientes-listar.php"><img src="../img/paciente.png">Cadastro de pacientes</a>
             <a href="#"><img src="../img/agenda.png">Agendamento de consultas</a>
             
 </div>

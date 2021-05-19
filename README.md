@@ -52,3 +52,7 @@ CREATE TABLE `bd_consultorio`.`TB_MEDICOS` (
 ) 
 ENGINE = InnoDB;
 ```
+### CRIACAO DA TABELA DE PACIENTES
+
+'''sql
+CREATE TABLE `bd_consultorio`.`tb_pacientes` ( `id` INT NULL AUTO_INCREMENT , `nome` VARCHAR(100) NOT NULL , `telefone` VARCHAR(20) NOT NULL , `dat

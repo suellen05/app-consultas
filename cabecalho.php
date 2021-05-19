@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <main class="container p-3 my-3 bg-primary text-danger">">
+    <main class="container p-3 my-3 text-danger">">
         <header>
             <h1>APP Consultas</h1>
             <hr>
