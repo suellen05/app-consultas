@@ -64,3 +64,49 @@ CREATE TABLE `bd_consultorio`.`tb_pacientes` (
      PRIMARY KEY  (`id`)
 ) 
 ENGINE = InnoDB;
+
+
+### Estrutura da tabela `tb_agendas`
+--
+
+CREATE TABLE `tb_agendas` (
+  `id` int(11) NOT NULL,
+  `data` date NOT NULL,
+  `hora` time NOT NULL,
+  `id_medico` int(11) NOT NULL,
+  `sala` varchar(20) NOT NULL,
+  `id_paciente` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `tb_agendas`
+--
+ALTER TABLE `tb_agendas`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_agenda_medico` (`id_medico`),
+  ADD KEY `fk_agenda_paciente` (`id_paciente`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `tb_agendas`
+--
+ALTER TABLE `tb_agendas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `tb_agendas`
+--
+ALTER TABLE `tb_agendas`
+  ADD CONSTRAINT `fk_agenda_paciente` FOREIGN KEY (`id_paciente`) REFERENCES `tb_pacientes` (`id`);
+COMMIT;
