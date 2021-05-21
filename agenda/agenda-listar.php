@@ -16,6 +16,7 @@ inner join tb_medicos on tb_agendas.id_medico = tb_medicos.id";
 
 $listaDeAgenda = mysqli_query($conexao , $sqlBusca);
 ?>
+<p><a href="agenda-formulario-inserir.php">Nova Consulta</a>
 
 <table class="table table-hover">
     <tr>
