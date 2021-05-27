@@ -110,3 +110,8 @@ ALTER TABLE `tb_agendas`
 ALTER TABLE `tb_agendas`
   ADD CONSTRAINT `fk_agenda_paciente` FOREIGN KEY (`id_paciente`) REFERENCES `tb_pacientes` (`id`);
 COMMIT;
+
+
+### Criacao da tabela de Usuarios
+
+CREATE TABLE `bd_consultorio`.`tb_usuarios` ( `id` INT NOT NULL , `usuario` VARCHAR(30) NOT NULL , `senha` VARCHAR(8) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

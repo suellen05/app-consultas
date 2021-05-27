@@ -4,21 +4,21 @@ include"../includes/conexao.php";
 ?>
 
 
-<form name="castro-agenda" method="post" action="agenda-inserir.php">
+<form name="cadastro-agenda" method="post" action="agenda-inserir.php">
 <p>
 <br>
 
            
             <p class="col-4">
             <label>Data</label>
-            <input type="date" nome="data" class="form-control">
+            <input type="date" name="data" class="form-control">
             
 
            
             <div class="row">
             <p class="col-2">
             <label>Hora:</label>
-            <input type="time" nome="hora" class="form-control">
+            <input type="time" name="hora" class="form-control">
         
         
         <div class="row">
@@ -50,7 +50,7 @@ while($medico = mysqli_fetch_assoc($listaDeMedicos)){
  <div class="row">
  <p class="col-8">
  <label>Paciente:</label>
- <select name="id_pacientes"class="form-control">
+ <select name="id_paciente"class="form-control">
            
             <?php
                 $sqlBuscaPacientes = "SELECT * FROM tb_pacientes";
